@@ -16,7 +16,7 @@ public class DBConnection {
     public static Connection getConnection() {
         if (connection == null) {
             try {
-                Class.forName("com.mysql.cj.jdbc.Driver"); // <-- adaugă linia asta
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 connection = DriverManager.getConnection(URL, USER, PASSWORD);
             } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();

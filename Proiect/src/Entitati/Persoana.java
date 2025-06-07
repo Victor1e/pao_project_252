@@ -1,6 +1,7 @@
 package Entitati;
 
 public abstract class Persoana{
+
     protected String nume;
     protected String email;
 

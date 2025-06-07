@@ -119,5 +119,21 @@ public class FestivalService {
             System.out.println(a);
         }
     }
+    public List<Participant> getParticipanti() {
+        return participanti;
+    }
+    public void afiseazaParticipanti() {
+        List<Participant> lista = getParticipanti();
+        if (lista.isEmpty()) {
+            System.out.println("Nu există participanţi.");
+        } else {
+            for (Participant p : lista) {
+                System.out.println(p);
+            }
+        }
+    }
+
+
+
 
 }
